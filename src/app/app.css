@@ -1,0 +1,36 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.main-content-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.left-column {
+  /* No specific styles needed, grid handles it */
+}
+
+.right-column {
+  /* No specific styles needed, grid handles it */
+}
+
+.error-banner {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .main-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
